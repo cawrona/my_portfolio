@@ -64,8 +64,11 @@ img {
     display: flex;
     justify-content: space-between;
     margin-left: auto;
-    a:hover {
-      color: $medium-color;
+    a {
+      transition: 0.5s;
+      &:hover {
+        color: $medium-color;
+      }
     }
   }
   // Social
@@ -73,6 +76,21 @@ img {
     display: flex;
     letter-spacing: -0.5em;
     // line-height: 55 px;
+    a {
+      display: inline-block;     
+      position: relative;  
+      z-index: 1;     
+      padding: 0.5em;     
+      margin: -0.5em;
+      &#YT:hover > #FB > #INSTA > #GIT {
+        opacity: 0.2;
+      }
+      // &#FB:hover ~ #YT ~ #INSTA ~ #GIT {
+      //   opacity: 0.2;
+      // }
+    }
+
+
   }
 }
 
@@ -111,12 +129,14 @@ img {
       a {
         text-decoration: none;
         color: #fff;
+        border-bottom: 1px solid transparent;
+        transition: 0.5s;
         // text-transform: uppercase;
         // border-bottom: 3px transparent solid;
         // padding-bottom: 0.5rem;
         // transition: border-color 0.5s;
         &:hover {
-          text-decoration: underline ;
+          border-color: white;
         }
       }
     }

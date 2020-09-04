@@ -123,11 +123,21 @@ img {
     display: flex;
     justify-content: space-between;
     margin-left: auto; }
-    .main-nav #center-nav a:hover {
-      color: #8cc7e9; }
+    .main-nav #center-nav a {
+      transition: 0.5s; }
+      .main-nav #center-nav a:hover {
+        color: #8cc7e9; }
   .main-nav .nav-social {
     display: flex;
     letter-spacing: -0.5em; }
+    .main-nav .nav-social a {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      padding: 0.5em;
+      margin: -0.5em; }
+      .main-nav .nav-social a#YT:hover > #FB > #INSTA > #GIT {
+        opacity: 0.2; }
 
 #header-home {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/Christian.jpg") no-repeat center right/cover;
@@ -149,9 +159,11 @@ img {
       line-height: 1; }
     #header-home .header-content a {
       text-decoration: none;
-      color: #fff; }
+      color: #fff;
+      border-bottom: 1px solid transparent;
+      transition: 0.5s; }
       #header-home .header-content a:hover {
-        text-decoration: underline; }
+        border-color: white; }
 
 #header-inner {
   background: url("../img/Christian.jpg") no-repeat 20% 30%/cover;
