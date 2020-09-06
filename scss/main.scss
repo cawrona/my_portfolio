@@ -75,22 +75,24 @@ img {
   .nav-social {
     display: flex;
     letter-spacing: -0.5em;
-    // line-height: 55 px;
+
+    &:hover li {
+      opacity: 0.5;
+    }
+    li:hover {
+      opacity: 1;
+    }
+    ul {
+      margin-left: auto;
+      padding-left: auto;
+    }
     a {
       display: inline-block;     
       position: relative;  
       z-index: 1;     
       padding: 0.5em;     
       margin: -0.5em;
-      &#YT:hover > #FB > #INSTA > #GIT {
-        opacity: 0.2;
-      }
-      // &#FB:hover ~ #YT ~ #INSTA ~ #GIT {
-      //   opacity: 0.2;
-      // }
     }
-
-
   }
 }
 

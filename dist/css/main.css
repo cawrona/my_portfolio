@@ -130,14 +130,19 @@ img {
   .main-nav .nav-social {
     display: flex;
     letter-spacing: -0.5em; }
+    .main-nav .nav-social:hover li {
+      opacity: 0.5; }
+    .main-nav .nav-social li:hover {
+      opacity: 1; }
+    .main-nav .nav-social ul {
+      margin-left: auto;
+      padding-left: auto; }
     .main-nav .nav-social a {
       display: inline-block;
       position: relative;
       z-index: 1;
       padding: 0.5em;
       margin: -0.5em; }
-      .main-nav .nav-social a#YT:hover > #FB > #INSTA > #GIT {
-        opacity: 0.2; }
 
 #header-home {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/Christian.jpg") no-repeat center right/cover;
